@@ -71,7 +71,7 @@ cardContainer.innerHTML +=
     <h5 class="card-title">${park.name}</h5>
      <p class="text-muted">📍 ${park.location}</p>
     <p class="card-text">${park.description}</p>
-   <a href="detail.html?image=${park.Image}&name=${park.name}&location=${park.location}&description=${park.description}&about=${park.about}" class="btn btn-success rounded-pill">
+   <a href="detail.html?image=${park.Image}&name=${park.name}&location=${park.location}&description=${park.description}&about=${park.about}" class="btn btn-success rounded-pill mt-auto w-100">
     Go somewhere
 </a>
   </div>
@@ -130,3 +130,103 @@ if(document.getElementById("CategoryListing")){
 
 
     // category section end
+
+    // zoo section
+ 
+let zoo = [
+    {
+        Image: "images/zoo-section-image-1.jpeg",
+        name: "Karachi Zoo",
+        location: "Garden, Karachi",
+        description: "A popular zoo featuring different animals, birds and family-friendly attractions.",
+        about: "Karachi Zoo is one of the oldest recreational places in the city..."
+    },
+
+    {
+        Image: "images/zoo-section-image-2.jpeg",
+        name: "Safari Zoo",
+        location: "Karachi",
+        description: "A beautiful place where visitors can see wildlife and enjoy nature.",
+        about: "Safari Zoo provides visitors with an opportunity to experience wildlife..."
+    },
+
+     {
+        Image: "images/zoo-section-image-3.jpeg",
+        name: "Lahore Zoo",
+        location: "Mall Road, Lahore",
+        description: "One of the oldest zoos in Pakistan, featuring a variety of animals, birds, and family-friendly attractions.",
+        about: "Lahore Zoo is a popular wildlife attraction in the heart of Lahore. It provides visitors with an opportunity to see different species of animals and birds while enjoying a family-friendly outdoor environment. The zoo is a well-known recreational place for families, students, and wildlife lovers."
+    },
+
+    {
+        Image: "images/zoo-section-image-4.jpeg",
+        name: "Lahore Safari Zoo",
+        location: "Raiwind Road, Lahore",
+        description: "A large wildlife park where visitors can experience animals in spacious natural surroundings.",
+        about: "Lahore Safari Zoo is a large wildlife area located on the outskirts of Lahore. It offers visitors a chance to explore nature and observe different animals in a more open environment. The park is a popular destination for families and people interested in wildlife and outdoor activities."
+    },
+
+    {
+    Image: "images/zoo-section-image-5.jpeg",
+    name: "Multi Gardens Zoo",
+    location: "Multi Gardens, Islamabad",
+    description: "A family-friendly wildlife and recreational place where visitors can enjoy animals, nature, and outdoor activities.",
+    about: "Multi Gardens Zoo is a local wildlife attraction in Islamabad where families and visitors can spend time enjoying nature and observing animals. Its peaceful surroundings make it a suitable place for outdoor recreation and a simple wildlife experience."
+   },
+
+   {
+        Image: "images/zoo-section-image-6.jpeg",
+        name: "Wildlife Park Islamabad",
+        location: "Islamabad",
+        description: "A natural wildlife area offering visitors an opportunity to experience animals and nature in a peaceful setting.",
+        about: "Wildlife Park Islamabad is a nature-focused destination where visitors can enjoy green surroundings and observe wildlife. It provides a relaxing outdoor experience for families, nature lovers, and visitors interested in exploring the natural environment."
+    }
+]    
+
+let zooContainer = document.getElementById("zooContainer")
+if(zooContainer){
+    for(let data of zoo){
+
+        zooContainer.innerHTML +=
+
+        `
+    <div class="col-12 col-sm-6 col-lg-4 mb-4">
+    
+<div class="card">
+  <img src="${data.Image}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${data.name}</h5>
+     <p class="text-muted">📍 ${data.location}</p>
+    <p class="card-text">${data.description}</p>
+   <a href="zoo-section-detail.html?image=${data.Image}&name=${data.name}&location=${data.location}&description=${data.description}&about=${data.about}" class="btn btn-success rounded-pill mt-auto w-100">
+    Go somewhere
+</a>
+  </div>
+
+    </div>
+
+        
+        `
+
+    }
+}
+
+ $(document).ready(function(){
+                $("#search").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+
+                    $("#cardContainer div").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+  
+$(document).ready(function(){
+                $("#search").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+
+                    $("#zooContainer div").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });

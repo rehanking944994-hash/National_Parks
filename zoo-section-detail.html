@@ -34,7 +34,7 @@
 
 <!-- Detail Page Section -->
 
-<div id="detailPageDesign">
+<div id="zoodetailPageDesign">
 
 </div>
 
@@ -46,86 +46,57 @@ var obj = new URL(url);
 
 var image = obj.searchParams.get("image");
 var name = obj.searchParams.get("name");
-var parkLocation = obj.searchParams.get("location");
+var zooLocation = obj.searchParams.get("location");
 var description = obj.searchParams.get("description");
 var about = obj.searchParams.get("about");
 
 
-var detailPageDesign = 
+var zoodetailPageDesign = `
 
-`
-<div class="container py-5">
-    <div class="card">
-        <div class="row g-0">
+<section class="container py-5">
+
+    
+    <div class="text-center mb-5">
+        <span class="text-success fw-bold">
+            EXPLORE WILDLIFE
+        </span>
+
+        <h1 class="fw-bold mt-2">
+            Zoo Details
+        </h1>
+
+        <p class="text-muted">
+            Discover more about this amazing zoo and its wildlife.
+        </p>
+    </div>
+
+
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="row g-0 align-items-center">
 
             <div class="col-md-6">
-                <img src="${image}" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="${name}">
-            </div>
+                <img src="${image}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="${name}"> </div>
 
             <div class="col-md-6">
-                <div class="card-body p-4">
-
-                    <h1 class="card-title fw-bold">
-                        ${name}
-                    </h1>
-
-                    <p class="text-success fw-bold">
-                        📍 ${parkLocation}
-                    </p>
-
-                    <h4 class="mt-4">
-                        About the Park
-                    </h4>
-
-                    <p class="card-text text-muted">
-                        ${about}
-                    </p>
-
-                    <h4 class="mt-4">
-                        Things To Do
-                    </h4>
-
-                    <p>
-                        🚶 Walking
-                    </p>
-
-                    <p>
-                        📸 Photography
-                    </p>
-
-                    <p>
-                        👨‍👩‍👧 Family Picnic
-                    </p>
-
-                    <h4 class="mt-4">
-                        Visitor Tips
-                    </h4>
-
-                    <p class="text-muted">
-                        🌿 Keep the park clean<br>
-                        🚯 Do not litter<br>
-                        💧 Carry drinking water
-                    </p>
-
-                    <a href="index.html"
-                       class="btn btn-success rounded-pill px-4 mt-2">
-                        ← Back to Parks
-                    </a>
-
+                <div class="p-4 p-lg-5">
+                    <h2 class="fw-bold">${name}</h2>
+                    <p class="text-success fw-semibold">📍 ${zooLocation}</p>
+                    <p class="text-muted">${description}</p>
+                    <hr>
+                    <h4 class="fw-bold"> About the Zoo</h4>
+                    <p class="text-muted">${about}</p>
+                    <a href="index.html" class="btn btn-success rounded-pill px-4 mt-2"> ← Back to Zoos </a>
                 </div>
             </div>
         </div>
     </div>
-</div>`
+</section>`
 
-
-
-
-document.getElementById("detailPageDesign").innerHTML = detailPageDesign;
+document.getElementById("zoodetailPageDesign").innerHTML = zoodetailPageDesign;
 
 </script>
 
-
+                             <!-- footer section start  -->
 
 <footer class="container-fluid bg-dark text-white py-5">
 
@@ -143,7 +114,6 @@ document.getElementById("detailPageDesign").innerHTML = detailPageDesign;
         </div>
 
         <div class="col-12 col-md-3 mb-4">
-
             <h5>Quick Links</h5>
 
             <a href="index.html" class="d-block text-secondary text-decoration-none">Home</a>
@@ -152,37 +122,30 @@ document.getElementById("detailPageDesign").innerHTML = detailPageDesign;
             <a href="contant us.html" class="d-block text-secondary text-decoration-none">Contact Us</a>
             <a href="About.html" class="d-block text-secondary text-decoration-none">About</a>
             <a href="Site Map.html" class="d-block text-secondary text-decoration-none">Site Map</a>
-
         </div>
 
-
         <div class="col-12 col-md-4 mb-4">
-
             <h5>Explore Pakistan</h5>
 
             <p class="text-secondary">
                 Discover nature, wildlife and beautiful
                 places waiting to be explored.
             </p>
-
         </div>
-
     </div>
 
-
-    <!-- Bottom -->
     <div class="border-top border-secondary mt-3 pt-3">
-
         <p class="text-center text-secondary mb-0">
             © 2026 National Parks. All Rights Reserved.
         </p>
-
     </div>
 
 </footer>
 
                             
                              <!-- footer section end -->
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
