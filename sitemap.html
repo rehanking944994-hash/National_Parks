@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sitemap | National Parks</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --forest:#1F3D2B;
+    --ink:#1a1a1a;
+    --muted:#8a8a8a;
+    --line:#e2e2e2;
+  }
+  body{
+    font-family:'Work Sans', sans-serif;
+    color:var(--ink);
+    background:#fff;
+  }
+  a{ text-decoration:none; color:var(--ink); }
+
+  /* ---------- Navbar ---------- */
+  .navbar{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    padding-top:1.1rem;
+    padding-bottom:1.1rem;
+  }
+  .navbar-brand{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:1.3rem;
+    color:var(--forest) !important;
+  }
+  .navbar-brand img{ height:34px; margin-right:.5rem; }
+  .navbar-nav .nav-link{
+    color:var(--ink);
+    font-weight:500;
+    font-size:.95rem;
+    padding:.5rem 1rem !important;
+  }
+  .navbar-nav .nav-link.active{ font-weight:700; }
+
+  /* ---------- Header ---------- */
+  .sitemap-header{
+    text-align:center;
+    padding:4rem 0 2.5rem;
+  }
+  .sitemap-header h1{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:clamp(3rem, 7vw, 5rem);
+    margin-bottom:1rem;
+  }
+  .breadcrumb-line{
+    font-size:.95rem;
+    color:var(--muted);
+  }
+  .breadcrumb-line a{ color:var(--muted); }
+  .breadcrumb-line a:hover{ color:var(--ink); }
+  .breadcrumb-line .current{ color:var(--ink); font-weight:600; }
+
+  /* ---------- Sitemap columns ---------- */
+  .sitemap-body{ padding:1rem 0 6rem; }
+
+  .sm-heading{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:1.8rem;
+    display:inline-block;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:.35rem;
+    margin-bottom:1.1rem;
+  }
+  .sm-group{ margin-bottom:3rem; }
+
+  .sm-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 .5rem;
+  }
+  .sm-list > li{ margin-bottom:.65rem; }
+  .sm-list > li > a{
+    font-size:1.15rem;
+    border-bottom:1px solid var(--ink);
+    padding-bottom:1px;
+  }
+  .sm-list > li > a:hover{ color:var(--forest); border-color:var(--forest); }
+
+  .sm-sublist{
+    list-style:none;
+    padding-left:1.25rem;
+    margin:.5rem 0 .9rem;
+  }
+  .sm-sublist li{ margin-bottom:.55rem; }
+  .sm-sublist li a{
+    font-size:1.05rem;
+    border-bottom:1px solid var(--ink);
+    padding-bottom:1px;
+  }
+  .sm-sublist li a:hover{ color:var(--forest); border-color:var(--forest); }
+
+  .sm-subsublist{
+    list-style:none;
+    padding-left:1.25rem;
+    margin:.5rem 0 .9rem;
+  }
+  .sm-subsublist li{ margin-bottom:.5rem; }
+  .sm-subsublist li a{
+    font-size:1rem;
+    border-bottom:1px solid var(--ink);
+    padding-bottom:1px;
+  }
+  .sm-subsublist li a:hover{ color:var(--forest); border-color:var(--forest); }
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:var(--forest);
+    color:rgba(255,255,255,.7);
+    padding:3rem 0 1.25rem;
+  }
+  footer h5{
+    font-family:'Fraunces', serif;
+    color:#fff;
+    font-weight:600;
+    margin-bottom:1rem;
+  }
+  footer a{ color:rgba(255,255,255,.65); }
+  footer a:hover{ color:#fff; }
+  footer .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.15);
+    margin-top:2rem;
+    padding-top:1.1rem;
+    font-size:.85rem;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/logo.png" alt="National Parks logo" onerror="this.style.display='none'">
+      National Parks
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Animal Info.html">Animal Info</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="sitemap-header">
+  <div class="container">
+    <h1>Sitemap</h1>
+    <div class="breadcrumb-line">
+      <a href="index.html">Home</a> &nbsp;&gt;&nbsp; <span class="current">Sitemap</span>
+    </div>
+  </div>
+</header>
+
+<!-- Sitemap columns -->
+<section class="sitemap-body">
+  <div class="container">
+    <div class="row gx-5">
+
+      <!-- Column 1 -->
+      <div class="col-lg-4">
+        <div class="sm-group">
+          <span class="sm-heading">Explore</span>
+          <ul class="sm-list">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="National Parks.html">National Parks</a>
+              <ul class="sm-sublist">
+                <li><a href="National Parks.html#north">Northern Parks</a></li>
+                <li><a href="National Parks.html#south">Southern Parks</a></li>
+                <li><a href="National Parks.html#coastal">Coastal &amp; Wetland Parks</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="Animal Info.html">Animal Info</a>
+              <ul class="sm-sublist">
+                <li><a href="Animal Info.html#mammals">Mammals</a></li>
+                <li><a href="Animal Info.html#birds">Birds</a></li>
+                <li><a href="Animal Info.html#endangered">Endangered Species</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-lg-4">
+        <div class="sm-group">
+          <span class="sm-heading">About Us</span>
+          <ul class="sm-list">
+            <li>
+              <a href="about.html">About</a>
+              <ul class="sm-sublist">
+                <li><a href="about.html#story">Our Story</a></li>
+                <li>
+                  <a href="about.html#values">Our Values</a>
+                  <ul class="sm-subsublist">
+                    <li><a href="about.html#values">Conservation</a></li>
+                    <li><a href="about.html#values">Education</a></li>
+                    <li><a href="about.html#values">Community</a></li>
+                    <li><a href="about.html#values">Access</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="about.html#stats">Our Impact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-lg-4">
+        <div class="sm-group">
+          <span class="sm-heading">Get In Touch</span>
+          <ul class="sm-list">
+            <li>
+              <a href="contact.html">Contact Us</a>
+              <ul class="sm-sublist">
+                <li><a href="contact.html#form">Send a Message</a></li>
+                <li><a href="contact.html#info">Contact Information</a></li>
+                <li><a href="contact.html#map">Find Us on the Map</a></li>
+              </ul>
+            </li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5>National Parks</h5>
+        <p style="max-width:32ch;">Discover the beauty of Pakistan's national parks, wildlife and natural landscapes, and find your next destination to connect with nature.</p>
+      </div>
+      <div class="col-lg-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Animal Info.html">Animal Info</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Explore Pakistan</h5>
+        <p>Discover nature, wildlife and beautiful places waiting to be explored.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 National Parks. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
