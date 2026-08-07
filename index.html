@@ -13,28 +13,27 @@
 <body>
                                <!-- navbar start -->
 
-<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 border-bottom">
-    <a href="" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"> 
-        <img src="images/logo.png" alt="National Parks" style="height: 90px; width: 140px; object-fit: contain;">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/logo.png" alt="National Parks logo" onerror="this.style.display='none'">
+      National Parks
     </a>
-      
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="animalinfo.html" class="nav-link px-2 link-dark">Animal Info</a></li>
-        <li><a href="contact us.html" class="nav-link px-2 link-dark">contact us</a></li>
-        <li><a href="about.html" class="nav-link px-2 link-dark">About</a></li>
-        <li><a href="sitemap.html" class="nav-link px-2 link-dark">Sitemap</li>
-         
-    </ul>
-
-<form class="d-flex justify-content-center w-100">
-    <input class="form-control me-2" type="search" id="search" placeholder="Search parks or zoos">
-    <button class="btn btn-success" type="submit">
-        Search
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-</form>
-
-</header>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Animal Info.html">Animal Info</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
                           <!-- navbar end -->
 
 
