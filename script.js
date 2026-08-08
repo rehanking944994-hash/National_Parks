@@ -1,18 +1,18 @@
 let parks = [
     {
-      Image: "images/card-image-1.jpeg",
+      Image: "card-image-1.jpeg",
       name: "Safari Park",
       location: "Gulshan-e-Iqbal, Karachi",
       description: "A large recreational park with lush greenery, wildlife, walking areas, lakes, and family attractions.",
       about: "Safari Park is one of the popular recreational parks in Karachi. It is a large green area where families can enjoy nature, walking, outdoor activities and beautiful surroundings. The park is known for its greenery, wildlife areas, lakes and family-friendly environment. It is a good place to spend time with family and friends away from the busy city.",
       category: "karachi",
-      cimage: "images/cimage-1.jpeg",
+      cimage: "cimage-1.jpeg",
       showHome: true
 
     },
 
     {
-      Image: "images/hill-park-image.jpeg",  
+      Image: "hill-park-image.jpeg",  
       name: "Hill Park",
       location: "PECHS, karachi",
       description: "hilltop location, greenery, walking areas aur city views.",
@@ -22,7 +22,7 @@ let parks = [
     },
 
     {
-      Image: "images/card-image-3.jpeg",
+      Image: "card-image-3.jpeg",
       name: "Kidney Hill Park",
       location: "Karachi",
       description: "A scenic urban park known for its natural landscape, greenery, walking trails, and relaxing environment.",
@@ -32,7 +32,7 @@ let parks = [
     },
 
     {
-      Image: "images/card-image-4.jpeg",
+      Image: "card-image-4.jpeg",
       name: "Bagh Ibn-e-Qasim",
       location: "Clifton/Sea View, karachi",
       description: "Karachi ke bade public parks mein se ek.",
@@ -42,7 +42,7 @@ let parks = [
     },
 
     {
-      Image: "images/card-image-5.jpeg",
+      Image: "card-image-5.jpeg",
       name: "Jheel Park",
       location: "PECHS, Karachi",
       description: "A popular family park with green lawns, walking areas, trees, and a peaceful environment in the heart of Karachi.",
@@ -52,7 +52,7 @@ let parks = [
     },
 
      {
-      Image: "images/card-image-6.jpeg",
+      Image: "card-image-6.jpeg",
       name: "Kirthar National Park",
       location: "Karachi Division, Sindh",
       description: "A vast natural protected area featuring rugged mountains, valleys, wildlife, and beautiful desert landscapes.",
@@ -62,7 +62,7 @@ let parks = [
     },
 
     {
-    Image: "images/lahore-image-1.jpeg",
+    Image: "lahore-image-1.jpeg",
     name: "Jilani Park",
     location: "Jail Road, Lahore",
     description: "A beautiful green park known for its gardens, walking areas, flowers, and peaceful environment.",
@@ -73,7 +73,7 @@ let parks = [
 },
 
 {
-    Image: "images/lahore-image-2.jpeg",
+    Image: "lahore-image-2.jpeg",
     name: "Bagh-e-Jinnah",
     location: "Mall Road, Lahore",
     description: "A historic green park featuring beautiful gardens, large trees, walking paths, and peaceful surroundings.",
@@ -83,7 +83,7 @@ let parks = [
 },
 
 {
-    Image: "images/lahore-image-3.jpeg",
+    Image: "lahore-image-3.jpeg",
     name: "Greater Iqbal Park",
     location: "Minar-e-Pakistan, Lahore",
     description: "A large public park with open spaces, greenery, walking areas, and famous historical surroundings.",
@@ -93,7 +93,7 @@ let parks = [
 },
 
 {
-    Image: "images/lahore-image-4.jpeg",
+    Image: "lahore-image-4.jpeg",
     name: "Racecourse Park",
     location: "Jail Road, Lahore",
     description: "A spacious recreational park with beautiful landscapes, walking tracks, gardens, and family-friendly areas.",
@@ -103,7 +103,7 @@ let parks = [
 },
 
 {
-    Image: "images/lahore-image-5.jpeg",
+    Image: "lahore-image-5.jpeg",
     name: "Model Town Park",
     location: "Model Town, Lahore",
     description: "A large green park featuring walking tracks, trees, lawns, and a peaceful environment for outdoor activities.",
@@ -113,7 +113,7 @@ let parks = [
 },
 
 {
-    Image: "images/lahore-image-6.jpeg",
+    Image: "lahore-image-6.jpeg",
     name: "Gulshan-e-Iqbal Park",
     location: "Allama Iqbal Town, Lahore",
     description: "A family-friendly park with greenery, walking areas, recreational facilities, and open spaces.",
@@ -124,7 +124,7 @@ let parks = [
 
 
 {
-    Image: "images/islmabad-image-1.jpeg",
+    Image: "islmabad-image-1.jpeg",
     name: "Fatima Jinnah Park",
     location: "F-9, Islamabad",
     description: "A huge green park with walking tracks, open spaces, greenery, and recreational areas.",
@@ -135,7 +135,7 @@ let parks = [
 },
 
 {
-    Image: "images/islmabad-image-2.jpeg",
+    Image: "islmabad-image-2.jpeg",
     name: "Lake View Park",
     location: "Murree Road, Islamabad",
     description: "A beautiful recreational park near Rawal Lake with greenery, walking areas, and family attractions.",
@@ -145,7 +145,7 @@ let parks = [
 },
 
 {
-    Image: "images/islmabad-image-3.jpeg",
+    Image: "islmabad-image-3.jpeg",
     name: "Shakarparian Park",
     location: "Shakarparian, Islamabad",
     description: "A scenic hilltop park offering greenery, walking areas, gardens, and beautiful views of Islamabad.",
@@ -155,7 +155,7 @@ let parks = [
 },
 
 {
-    Image: "images/islmabad-image-4.jpeg",
+    Image: "islmabad-image-4.jpeg",
     name: "Japanese Park",
     location: "H-8, Islamabad",
     description: "A family-friendly park with green spaces, walking areas, playgrounds, and a peaceful environment.",
@@ -165,7 +165,7 @@ let parks = [
 },
 
 {
-    Image: "images/islmabad-image-5.jpeg",
+    Image: "islmabad-image-5.jpeg",
     name: "Rose and Jasmine Garden",
     location: "Islamabad",
     description: "A beautiful garden featuring colorful flowers, especially roses and jasmine, with peaceful walking areas.",
@@ -175,7 +175,7 @@ let parks = [
 },
 
 {
-    Image: "images/islmabad-image-6.jpeg",
+    Image: "islmabad-image-6.jpeg",
     name: "Daman-e-Koh",
     location: "Margalla Hills, Islamabad",
     description: "A scenic viewpoint surrounded by greenery and hills, offering beautiful panoramic views of Islamabad.",
@@ -219,7 +219,7 @@ cardContainer.innerHTML +=
  
 let zoo = [
     {
-        Image: "images/zoo-section-image-1.jpeg",
+        Image: "zoo-section-image-1.jpeg",
         name: "Karachi Zoo",
         location: "Garden, Karachi",
         description: "A popular zoo featuring different animals, birds and family-friendly attractions.",
@@ -227,7 +227,7 @@ let zoo = [
     },
 
     {
-        Image: "images/zoo-section-image-2.jpeg",
+        Image: "zoo-section-image-2.jpeg",
         name: "Safari Zoo",
         location: "Karachi",
         description: "A beautiful place where visitors can see wildlife and enjoy nature.",
@@ -235,7 +235,7 @@ let zoo = [
     },
 
      {
-        Image: "images/zoo-section-image-3.jpeg",
+        Image: "zoo-section-image-3.jpeg",
         name: "Lahore Zoo",
         location: "Mall Road, Lahore",
         description: "One of the oldest zoos in Pakistan, featuring a variety of animals, birds, and family-friendly attractions.",
@@ -243,7 +243,7 @@ let zoo = [
     },
 
     {
-        Image: "images/zoo-section-image-4.jpeg",
+        Image: "zoo-section-image-4.jpeg",
         name: "Lahore Safari Zoo",
         location: "Raiwind Road, Lahore",
         description: "A large wildlife park where visitors can experience animals in spacious natural surroundings.",
@@ -251,7 +251,7 @@ let zoo = [
     },
 
     {
-    Image: "images/zoo-section-image-5.jpeg",
+    Image: "zoo-section-image-5.jpeg",
     name: "Multi Gardens Zoo",
     location: "Multi Gardens, Islamabad",
     description: "A family-friendly wildlife and recreational place where visitors can enjoy animals, nature, and outdoor activities.",
@@ -259,7 +259,7 @@ let zoo = [
    },
 
    {
-        Image: "images/zoo-section-image-6.jpeg",
+        Image: "zoo-section-image-6.jpeg",
         name: "Wildlife Park Islamabad",
         location: "Islamabad",
         description: "A natural wildlife area offering visitors an opportunity to experience animals and nature in a peaceful setting.",
